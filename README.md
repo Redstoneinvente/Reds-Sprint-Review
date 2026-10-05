@@ -36,3 +36,12 @@ These are system-level prompts. They are not individual performance measures or 
 ## Current database access note
 
 As observed on 2026-10-05, the requested endpoint returned `null` at `projects/storefront` and allowed an unauthenticated REST write. This is a property of the current database rules, not a requirement of the app. The app has no service account secret and does not automatically upload any sample records. The first explicit connect uploads the browser's current project if the remote location is empty. Review and tighten Firebase rules and enable authentication before storing anything sensitive or inviting other users.
+
+## Motivation and momentum
+
+The overview now includes a small-wins journal, project completion progress, an optional project purpose, and a self-chosen sprint focus. Completing a task adds a dated win automatically, while a manual win can capture discoveries, decisions, and other progress that does not fit a task checkbox. The completion celebration is brief and respects reduced-motion settings. There are no streaks, rankings, or penalties for taking a break.
+
+This design follows research emphasizing autonomous motivation and support for autonomy, competence, and relatedness, alongside evidence that visible progress in meaningful work can support positive motivation. The app translates those ideas into user-chosen goals, visible progress, and recognition of small steps; it does not claim to measure or guarantee motivation.
+
+- [Self-Determination Theory in Work Organizations: The State of a Science](https://doi.org/10.1146/annurev-orgpsych-032516-113108) — review of autonomous versus controlled motivation and autonomy, competence, and relatedness.
+- [The Progress Principle and the Psychology of Everyday Work Life](https://progressprinciple.com/portfolio-items/the-progress-principle-and-the-psychology-of-everyday-work-life/) — research on progress in meaningful work and small wins.
